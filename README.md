@@ -5,7 +5,7 @@
 Contact: honza[\dot]rychtar[\at]gmail[\dot]com
 
 ## Requirements
-* Docker
+* [Docker](https://www.docker.com/)
 
 ## Installation
 
