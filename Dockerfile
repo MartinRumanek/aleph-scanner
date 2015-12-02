@@ -15,4 +15,5 @@ RUN cd /build/AlephScanner && \
     ant -Dj2ee.server.home=/usr/local/tomcat -Dlibs.CopyLibs.classpath=/build/deps/org-netbeans-modules-java-j2seproject-copylibstask.jar dist
 
 # DEPLOY WAR
-RUN cp /build/AlephScanner/dist/AlephScanner.war /usr/local/tomcat/webapps
+RUN rm -rf $CATALINA_HOME/webapps/ROOT
+RUN cp /build/AlephScanner/dist/AlephScanner.war /usr/local/tomcat/webapps/ROOT.war
